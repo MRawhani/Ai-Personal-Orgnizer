@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Arabic and RTL Support */
+@layer components {
+  .rtl-support {
+    direction: auto;
+    text-align: right;
+  }
+  
+  .rtl-support[dir="rtl"] {
+    text-align: right;
+  }
+  
+  .rtl-support[dir="ltr"] {
+    text-align: left;
+  }
+  
+  /* Better Arabic font support */
+  .arabic-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Auto-direction for mixed content */
+  .auto-direction {
+    direction: auto;
+    unicode-bidi: plaintext;
+  }
+} 
