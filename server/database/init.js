@@ -162,6 +162,11 @@ async function initDatabases() {
       console.log(`✅ ${name}.db initialized`);
     }
     
+          // Initialize daily spending database
+      const { initDailySpendingDatabase } = require('./daily-spending-init');
+      await initDailySpendingDatabase();
+      console.log('✅ daily-spending.db initialized');
+    
     console.log('All databases initialized successfully!');
   } catch (error) {
     console.error('Error initializing databases:', error);

@@ -7,7 +7,8 @@ import {
   FolderOpen, 
   Bookmark, 
   Brain, 
-  FileText 
+  FileText,
+  TrendingUp
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -16,6 +17,7 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Dashboard', icon: Home },
     { path: '/money', label: 'Money', icon: DollarSign },
+    { path: '/daily-spending', label: 'Daily Spending', icon: TrendingUp },
     { path: '/notes', label: 'Notes', icon: StickyNote },
     { path: '/references', label: 'References', icon: FolderOpen },
     { path: '/bookmarks', label: 'Bookmarks', icon: Bookmark },

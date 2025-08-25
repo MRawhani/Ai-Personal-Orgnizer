@@ -8,6 +8,7 @@ import References from './pages/References';
 import Bookmarks from './pages/Bookmarks';
 import Knowledge from './pages/Knowledge';
 import Files from './pages/Files';
+import DailySpending from './pages/DailySpending';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/bookmarks" element={<Bookmarks />} />
             <Route path="/knowledge" element={<Knowledge />} />
             <Route path="/files" element={<Files />} />
+            <Route path="/daily-spending" element={<DailySpending />} />
           </Routes>
         </main>
       </div>

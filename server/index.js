@@ -24,6 +24,7 @@ const { referencesRoutes } = require('./routes/references');
 const { bookmarksRoutes } = require('./routes/bookmarks');
 const { knowledgeRoutes } = require('./routes/knowledge');
 const { filesRoutes } = require('./routes/files');
+const { dailySpendingRoutes } = require('./routes/daily-spending');
 
 // Initialize databases
 initDatabases();
@@ -35,6 +36,7 @@ app.use('/api/references', referencesRoutes);
 app.use('/api/bookmarks', bookmarksRoutes);
 app.use('/api/knowledge', knowledgeRoutes);
 app.use('/api/files', filesRoutes);
+app.use('/api/daily-spending', dailySpendingRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -56,7 +58,8 @@ app.get('*', (req, res) => {
         '/api/files',
         '/api/references',
         '/api/bookmarks',
-        '/api/knowledge'
+        '/api/knowledge',
+        '/api/daily-spending'
       ]
     });
   }
